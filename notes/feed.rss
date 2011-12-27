@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Playing Tenuki</title>
+    <link>http://people.untyped.org/damien.pollet/notes/"</link>
+    <description>Random articles not completely unrelated to research, objects, and programming languages.</description>
+    <pubDate>Tue, 25 Jan 2011 14:13:02 +0100</pubDate>
+    <lastBuildDate>Tue, 25 Jan 2011 14:13:02 +0100</lastBuildDate>
+    <generator>webgen - Webgen::SourceHandler::Feed</generator>
+
+    
+    <item>
+      <title>Intensive jazz week in Tourcoing</title>
+      <link>http://people.untyped.org/damien.pollet/notes/2010/tourcoing-jazz-festival.html</link>
+      <description>Mid-october is the time for jazz lovers around Lille, with the [Tourcoing Jazz Festival][tjf].
+This year it was from Oct. 16th to 23rd, and I suspect whoever invited the artists must have peeked at my music library; I just _had_ to get the whole-week pass.
+
+[tjf]: http://tourcoing-jazz-festival.com
+[jen]: http://www.jazzenord.com</description>
+      <pubDate>Mon, 08 Nov 2010 03:20:25 +0100</pubDate>
+      <guid isPermaLink="true">http://people.untyped.org/damien.pollet/notes/2010/tourcoing-jazz-festival.html</guid>
+    </item>
+    
+    <item>
+      <title>Many LaTeX documents, one BibTeX database</title>
+      <link>http://people.untyped.org/damien.pollet/notes/2010/shared-bibtex.html</link>
+      <description>As a researcher, I spend most of my time writing [LaTeX][], using [many][texlive] [tools][latexmkcat], among which [BibTeX][], the bibliography database processor. Our team manages a huge `.bib` file centralizing all publications we read and might need to cite someday.
+
+Since nearly everything we write uses that file, so it gets linked or copied into each the source directory of each new document. Some of us even have a bash alias to automate that copy, but they still have to invoke it for each new paper.
+But…
+
+Zero cost solution:
+: Just put the database somewhere in BibTeX's search path!
+
+[latex]: http://www.latex-project.org/ &quot;LaTeX, a document preparation system&quot;
+[texlive]: http://tug.org/texlive/ &quot;the TeXlive distribution&quot;
+[latexmkcat]: http://texcatalogue.sarovar.org/entries/latexmk.html &quot;Latexmk for automatic compilation&quot;
+[bibtex]: http://www.bibtex.org/
+</description>
+      <pubDate>Fri, 05 Nov 2010 19:13:12 +0100</pubDate>
+      <guid isPermaLink="true">http://people.untyped.org/damien.pollet/notes/2010/shared-bibtex.html</guid>
+    </item>
+    
+    <item>
+      <title>Playing Tenuki (eponym)</title>
+      <link>http://people.untyped.org/damien.pollet/notes/2009/playing-tenuki.html</link>
+      <description>I know, this is yet *another* re-opening-my-blog blog post ;)
+
+I've already maintained a blog before; it was a [Typo][] instance running on a venerable [Sun Ultra 5][ultra5] workstation behind my home DSL. As you can guess, Ruby on a 360MHz CPU is *not* fast, so it was getting painful to edit, and then I moved to Swiss, and the poor server got neglected.
+
+However, I now maintain these static web pages using [Webgen][], which has recently been given blog support by [Matteo Collina][matteo]. Fiddle, hack, tweak, and here's the result.
+
+[typo]: http://blog.typosphere.org/
+[ultra5]: http://en.wikipedia.org/wiki/Ultra_5/10
+[webgen]: http://webgen.rubyforge.org
+[matteo]: http://matteocollina.com/
+</description>
+      <pubDate>Tue, 02 Nov 2010 17:37:07 +0100</pubDate>
+      <guid isPermaLink="true">http://people.untyped.org/damien.pollet/notes/2009/playing-tenuki.html</guid>
+    </item>
+    
+    <item>
+      <title>A better Qwerty layout for accents</title>
+      <link>http://people.untyped.org/damien.pollet/notes/2010/accented-qwerty.html</link>
+      <description>Like many programmers whose main language is not English, I've been facing the keyboard dilemma for a while:
+keep my native layout even though frequent programming characters like `[]{}|\` require 2 or 3 fingers, or adopt the standard US Qwerty layout?
+
+In practice, I've chosen Qwerty because I write a lot in English anyway, and its advantages outweight the couple of defaults and inconsistencies it does have. The problem is, I've recently started learning [Esperanto][], which requires a dozen diacritics that are not reachable on the basic Qwerty.
+
+So, I made a [layout][] to fix that, plus a couple itches I had with the basic Qwerty layout.
+
+[esperanto]: http://en.wikipedia.org/wiki/Esperanto
+[layout]: http://github.com/cdlm/infrastructure/blob/master/mac/Accented%20QWERTY.keylayout</description>
+      <pubDate>Sun, 18 Apr 2010 02:13:08 +0200</pubDate>
+      <guid isPermaLink="true">http://people.untyped.org/damien.pollet/notes/2010/accented-qwerty.html</guid>
+    </item>
+    
+    <item>
+      <title>Integrating OmniGraffle and Latexmk</title>
+      <link>http://people.untyped.org/damien.pollet/notes/2010/latexmk-omnigraffle.html</link>
+      <description>Compiling LaTeX documents can be quite a hassle, because it's an iterative process, and the dependancies are not really clear.
+There is one gem of a tool, however, that any regular LaTeXer should know: [Latexmk][].
+
+Latexmk handles all the common TeX pipelines (DVI, PS, PDF…), detects most if not all the dependancies if your document is split into several source files, and will (re-)run LaTeX, BibTeX, etc. as needed, effectively reducing building most documents to this invocation:
+
+    $ latexmk
+
+Very nice indeed, but what about figures created in an external editor like [OmniGraffle][]? Going through OmniGraffle's menus to export documents to PDF after each change quickly gets boring.
+
+[latexmk]: http://www.phys.psu.edu/~collins/software/latexmk-jcc/ &quot;Latexmk's home page&quot;
+[omnigraffle]: http://www.omnigroup.com/applications/OmniGraffle/ &quot;OmniGroup's diagramming application&quot;
+</description>
+      <pubDate>Thu, 08 Apr 2010 21:20:51 +0200</pubDate>
+      <guid isPermaLink="true">http://people.untyped.org/damien.pollet/notes/2010/latexmk-omnigraffle.html</guid>
+    </item>
+    
+
+  </channel>
+</rss>
+
+
+

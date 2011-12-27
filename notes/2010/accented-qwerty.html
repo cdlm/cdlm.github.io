@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Website of Damien Pollet, Ph.D
+" />
+		<meta name="keywords" content="software engineering, programming languages, reengineering, visualisation, virtual machines, object-oriented
+" />
+		<meta name="author" content="Damien Pollet" />
+		<meta name="generator" content="webgen - http://webgen.rubyforge.org" />
+		<link rel="stylesheet" type="text/css" href="../../stylesheets/screen.css" media="screen,projection" />
+		
+		<link rel="icon" type="image/png" href="../../images/icon.png" />
+
+		<title>Damien Pollet — A better Qwerty layout for accents</title>
+		<script type="text/javascript" src="../../scripts/hyphenator-packed.js"></script>
+		<script type="text/javascript" src="../../scripts/jquery-1.4.3.min.js"></script>
+		<script type="text/javascript" src="../../scripts/footnotes.js"></script>
+		<script type="text/javascript" src="../../scripts/konami.pack.js"></script>
+		<script type="text/javascript">
+			var k = new Konami();
+			k.code = function() {
+				document.getElementById("konami").style.display = "inline";
+				var cssLink = document.createElement("link");
+				cssLink.href = "../../stylesheets/konami.css";
+				cssLink.rel = "stylesheet";
+				cssLink.type = "text/css";
+				document.body.appendChild(cssLink);
+			};
+			k.load();
+		</script>
+	</head>
+
+	<body>
+		<div id="pagetop" class="hide">
+			<p>Skip to: <a href="#menu" accesskey="2">Site menu</a> | <a href="#main" accesskey="3">Main content</a></p>
+		</div>
+
+		<div id="container">
+			<div id="header">
+				<h1><a href="../../index.html" accesskey="4">Damien Pollet</a></h1>
+				<div id="tagline">Assistant professor, <a href="http://www.univ-lille1.fr">university of Lille 1, France</a><br/> <em>object-oriented software (re)engineering &amp; language design</em>
+</div>
+				<div class="clear">&nbsp;</div>
+				<div id="menu"><ul><li class="webgen-menu-level1"><a href="../../index.html">Home</a></li><li class="webgen-menu-level1 webgen-menu-submenu"><a href="../../publications/index.html">Publications</a></li><li class="webgen-menu-level1 webgen-menu-submenu"><a href="../../research/index.html">Research</a></li><li class="webgen-menu-level1 webgen-menu-submenu"><a href="../../teaching/index.html">Teaching</a></li><li class="webgen-menu-level1"><a href="../../curriculum.html">CV</a></li><li class="webgen-menu-level1"><a href="../../contact.html">Contact</a></li><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="../index.html">Notes</a></li></ul></div>
+				<div id="langbar"></div>
+				<div class="clear">&nbsp;</div>
+			</div>
+
+			<div id="main" class="hyphenate">
+				
+				
+<h1 id="a-better-qwerty-layout-for-accents">A better Qwerty layout for accents</h1>
+
+<p><img alt="Apple Keyboard" class="right" src="../images/keyboard.jpg" title="CC-BY http://www.flickr.com/photos/declanjewell/2687934126" /></p>
+
+<div class="postmeta">
+  <span class="date">17 Apr 2010</span>
+  <span class="tags">
+    in <a href="../index.hack.html">hack</a>, <a href="../index.usability.html">usability</a>
+  </span>
+</div>
+
+<p>Like many programmers whose main language is not English, I&rsquo;ve been facing the keyboard dilemma for a while:
+keep my native layout even though frequent programming characters like <code>[]{}|\</code> require 2 or 3 fingers, or adopt the standard US Qwerty layout?</p>
+
+<p>In practice, I&rsquo;ve chosen Qwerty because I write a lot in English anyway, and its advantages outweight the couple of defaults and inconsistencies it does have. The problem is, I&rsquo;ve recently started learning <a href="http://en.wikipedia.org/wiki/Esperanto">Esperanto</a>, which requires a dozen diacritics that are not reachable on the basic Qwerty.</p>
+
+<p>So, I made a <a href="http://github.com/cdlm/infrastructure/blob/master/mac/Accented%20QWERTY.keylayout">layout</a> to fix that, plus a couple itches I had with the basic Qwerty layout.</p>
+
+<h2 id="rollover--overstriking">Rollover &amp; Overstriking</h2>
+
+<p>The problem with accessing diacritics in Qwerty is that the dead-key combinations have not been designed with rollover or overstriking in mind, as described by Jef Raskin in <a href="http://en.wikipedia.org/wiki/The_Humane_Interface"><em>The Humane Interface</em></a>:</p>
+
+<dl>
+  <dt>Rollover</dt>
+  <dd>A keyboard that supports rollover does not get confused when you start pressing a key before the previous one has been completely released. This is very useful for sequences of letters that are typed in a single swipe, like the <em>-ion</em> suffix.</dd>
+  <dt>Overstriking</dt>
+  <dd>Overstriking is when key B is pressed after, but released before key A; it&rsquo;s important that the last key pressed is released first, else this is rollover. Raskin proposed that characters could be composed this way by temporally overstriking keys, like one would physically overstrike glyphs on a typewriter.</dd>
+</dl>
+
+<p>What makes accents painful with Qwerty it that they require finger-jumping, for instance to get &ldquo;É&rdquo;:
+press option, press e, release <em>both</em>, press shift, press e, release.
+Admittedly, you get used to it, but the gesture would flow better if it was just:
+press shift and option, double-type e, release.</p>
+
+<p>Actually, most of the problem was that the layout defines nothing when it&rsquo;s in a dead-key mode and the option key has not been released. I just duplicated accented letters to these option-keys. Similarly, to handle accented capitals, I duplicated the dead-keys to their shift-option equivalents.</p>
+
+<h2 id="why-keep-qwerty-what-about-alternate-keyboards">Why keep Qwerty, what about alternate keyboards?</h2>
+
+<p>The basic Qwerty layout has many advantages:</p>
+
+<ul>
+  <li>it is well-known —in fact, most of my coworkers, french or not, use it already;</li>
+  <li>it&rsquo;s the default with exotic hardware or system operation modes;</li>
+  <li>it conveniently groups most open-close character pairs.</li>
+</ul>
+
+<p>Mac OS does have an <em>U.S. Extended</em> keyboard layout that provides more accented characters, but it has the same rollover problems, and the dead-keys are placed completely differently, invalidating muscular memory learned from the usual Qwerty.</p>
+
+<p>Of course, there is also the solution of an entirely new keyboard layout such as <a href="http://bepo.fr">Bépo</a>, which has been designed from the ground up to fix all these problems; I might adopt it sometime, but this is too big a step for me for now. I learned <a href="http://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard">Dvorak</a> because it was only a quick <a href="http://www.flickr.com/photos/damienpollet/4302582401">keycap permutation</a> away from Qwerty; I can&rsquo;t touch-type, so converting my physical keyboard is necessary, but that also frustrates anyone I lend my keyboard to.</p>
+
+<h2 id="the-layout">The layout</h2>
+
+<p><a href="http://github.com/cdlm/infrastructure/blob/master/mac/Accented%20QWERTY.keylayout">Download the file here</a>, then drop it into your <code>Library/Keyboard Layouts</code> directory; it should then become available from the <em>Language &amp; Text</em> preference pane. I made it using <a href="http://scripts.sil.org/ukelele">Ukelele</a>, and am releasing it under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 License</a>.</p>
+
+<h3 id="whats-changed">What&rsquo;s changed</h3>
+
+<ul>
+  <li>The accent dead keys still work the same, but now also work with overlaps of shift, option, and the accented letter.</li>
+  <li>The circumflex will work with the <a href="http://en.wikipedia.org/wiki/Esperanto">Esperanto</a> consonants Ĉĉ, Ĝĝ, Ĥĥ, Ĵĵ, Ŝŝ.</li>
+  <li>The <a href="http://en.wikipedia.org/wiki/Breve">breve</a> for Ŭŭ is assigned to option-b.</li>
+  <li>I moved some signs and greek letters around: ∆ is shift-option-d, λ is option-l, æ is option-a… this is subject to taste and future changes, so I won&rsquo;t list them all precisely, but suggestions are welcome.</li>
+</ul>
+
+<h3 id="whats-still-needed">What&rsquo;s still needed</h3>
+
+<ul>
+  <li>An icon. I&rsquo;m thinking probably a grey one like the Dvorak layout.</li>
+  <li>More accents, or extended characters? Tell me which…</li>
+</ul>
+
+
+				<div class="clear">&nbsp;</div>
+			</div>
+
+			
+			<div class="clear">&nbsp;</div>
+		</div>
+
+		<div id="pagebottom">
+			<p>Last updated on 2011-01-25.&emsp;
+				Generated by
+				<a href="http://webgen.rubyforge.org">webgen</a>,
+				<a href="http://sass-lang.com">sass</a>,
+				<a href="http://daringfireball.net/projects/markdown/">markdown</a>/<a href="http://kramdown.rubyforge.org">kramdown</a>,
+				<a href="http://www.ruby-lang.org/en/">ruby</a>,
+				<a href="http://code.google.com/p/hyphenator/">hyphenator.js</a>
+				(toggle <a id="HyphenatorToggleBox" class="donthyphenate" onclick="Hyphenator.toggleHyphenation();">hy-phe-na-ti-on</a>)&hellip;
+				<span id="konami" style="display:none;">and <a href="http://konami-js.googlecode.com">konami.js</a>!</span>
+				<br/>
+				Some rights reserved.&emsp;
+				Except where otherwise noted, this website by <a xmlns:cc="http://creativecommons.org/ns#" href="http://people.untyped.org/damien.pollet" property="cc:attributionName" rel="cc:attributionURL">Damien Pollet</a><br/>
+				is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative Commons Attribution-Share Alike 2.0 France</a>.
+				<br/>
+				<img alt="Creative Commons License" style="margin-top:1ex;border-width:0" src="../../images/cc-by-sa-80x15.png" />
+			</p>
+			<a class="hide" href="#pagetop" accesskey="1">Back to top</a>
+		</div>
+
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-718463-2']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script');
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				ga.setAttribute('async', 'true');
+				document.documentElement.firstChild.appendChild(ga);
+			})();
+		</script>
+	</body>
+</html>
