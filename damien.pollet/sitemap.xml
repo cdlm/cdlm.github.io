@@ -1,202 +1,159 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
-    <loc>http://people.untyped.org/damien.pollet/index.html</loc>
-    <lastmod>2010-11-06T03:40:33+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    
-    <priority>0.5</priority>
-    
+    <loc>http://people.untyped.org/damien.pollet/contact/</loc>
+    <lastmod>2012-10-13</lastmod>
   </url>
-
   <url>
-    <loc>http://people.untyped.org/damien.pollet/index.fr.html</loc>
-    <lastmod>2010-11-05T17:27:04+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    
-    <priority>0.5</priority>
-    
+    <loc>http://people.untyped.org/damien.pollet/curriculum/</loc>
+    <lastmod>2010-12-21</lastmod>
   </url>
-
   <url>
-    <loc>http://people.untyped.org/damien.pollet/publications/</loc>
-    <lastmod>2010-11-12T02:00:41+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    
-    <priority>0.5</priority>
-    
+    <loc>http://people.untyped.org/damien.pollet/</loc>
+    <lastmod>2012-10-14</lastmod>
   </url>
-
   <url>
-    <loc>http://people.untyped.org/damien.pollet/research/</loc>
-    <lastmod>2010-11-02T17:37:07+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    
-    <priority>0.5</priority>
-    
+    <loc>http://people.untyped.org/damien.pollet/notes/2009/playing-tenuki/</loc>
+    <lastmod>2012-10-14</lastmod>
   </url>
-
   <url>
-    <loc>http://people.untyped.org/damien.pollet/teaching/</loc>
-    <lastmod>2010-11-06T03:47:28+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    
-    <priority>0.5</priority>
-    
+    <loc>http://people.untyped.org/damien.pollet/notes/2010/accented-qwerty/</loc>
+    <lastmod>2012-10-14</lastmod>
   </url>
-
   <url>
-    <loc>http://people.untyped.org/damien.pollet/curriculum.html</loc>
-    <lastmod>2009-08-24T03:45:13+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-    
-    <priority>0.5</priority>
-    
+    <loc>http://people.untyped.org/damien.pollet/notes/2010/latexmk-omnigraffle/</loc>
+    <lastmod>2012-10-14</lastmod>
   </url>
-
   <url>
-    <loc>http://people.untyped.org/damien.pollet/contact.html</loc>
-    <lastmod>2010-10-29T01:36:42+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-    
-    <priority>0.5</priority>
-    
+    <loc>http://people.untyped.org/damien.pollet/notes/2010/shared-bibtex/</loc>
+    <lastmod>2012-10-14</lastmod>
   </url>
-
+  <url>
+    <loc>http://people.untyped.org/damien.pollet/notes/2010/tourcoing-jazz-festival/</loc>
+    <lastmod>2012-10-14</lastmod>
+  </url>
   <url>
     <loc>http://people.untyped.org/damien.pollet/notes/</loc>
-    <lastmod>2010-11-12T02:00:41+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    
-    <priority>0.5</priority>
-    
+    <lastmod>2012-10-09</lastmod>
   </url>
-
   <url>
-    <loc>http://people.untyped.org/damien.pollet/notes/2009/</loc>
-    <lastmod>2010-11-02T17:37:07+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    
-    <priority>0.5</priority>
-    
+    <loc>http://people.untyped.org/damien.pollet/publications/2001/Sunye2001umlRefactoring.pdf</loc>
+    <lastmod>2011-11-06</lastmod>
   </url>
-
   <url>
-    <loc>http://people.untyped.org/damien.pollet/notes/2009/playing-tenuki.html</loc>
-    <lastmod>2010-11-02T17:37:07+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    
-    <priority>0.5</priority>
-    
+    <loc>http://people.untyped.org/damien.pollet/publications/2002/Manjarres2002analysisPatterns.pdf</loc>
+    <lastmod>2011-11-06</lastmod>
   </url>
-
   <url>
-    <loc>http://people.untyped.org/damien.pollet/notes/2010/</loc>
-    <lastmod>2010-11-08T03:20:25+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    
-    <priority>0.5</priority>
-    
+    <loc>http://people.untyped.org/damien.pollet/publications/2003/Bezivin2003reflectiveMde.pdf</loc>
+    <lastmod>2011-11-06</lastmod>
   </url>
-
   <url>
-    <loc>http://people.untyped.org/damien.pollet/notes/2010/accented-qwerty.html</loc>
-    <lastmod>2010-04-18T02:13:08+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-    
-    <priority>0.5</priority>
-    
+    <loc>http://people.untyped.org/damien.pollet/publications/2004/Dahan2004cim.pdf</loc>
+    <lastmod>2011-11-06</lastmod>
   </url>
-
   <url>
-    <loc>http://people.untyped.org/damien.pollet/notes/2010/latexmk-omnigraffle.html</loc>
-    <lastmod>2010-04-08T21:20:51+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-    
-    <priority>0.5</priority>
-    
+    <loc>http://people.untyped.org/damien.pollet/publications/2005/Pollet2005phd.pdf</loc>
+    <lastmod>2011-11-06</lastmod>
   </url>
-
   <url>
-    <loc>http://people.untyped.org/damien.pollet/notes/2010/tourcoing-jazz-festival.html</loc>
-    <lastmod>2010-11-08T03:20:25+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    
-    <priority>0.5</priority>
-    
+    <loc>http://people.untyped.org/damien.pollet/publications/2007/Black2007sbe.pdf</loc>
+    <lastmod>2011-11-06</lastmod>
   </url>
-
   <url>
-    <loc>http://people.untyped.org/damien.pollet/notes/2010/shared-bibtex.html</loc>
-    <lastmod>2010-11-05T19:13:12+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    
-    <priority>0.5</priority>
-    
+    <loc>http://people.untyped.org/damien.pollet/publications/2007/Ducasse2007packageBlueprint.pdf</loc>
+    <lastmod>2011-11-06</lastmod>
   </url>
-
   <url>
-    <loc>http://people.untyped.org/damien.pollet/notes/index.bibtex.html</loc>
-    <lastmod>2011-01-25T14:12:57+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    
-    <priority>0.5</priority>
-    
+    <loc>http://people.untyped.org/damien.pollet/publications/2007/Pollet2007sarSoa.pdf</loc>
+    <lastmod>2011-11-06</lastmod>
   </url>
-
   <url>
-    <loc>http://people.untyped.org/damien.pollet/notes/index.blog.html</loc>
-    <lastmod>2011-01-25T14:12:57+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    
-    <priority>0.5</priority>
-    
+    <loc>http://people.untyped.org/damien.pollet/publications/2008/Abdeen2008packageFingerprint.pdf</loc>
+    <lastmod>2011-11-06</lastmod>
   </url>
-
   <url>
-    <loc>http://people.untyped.org/damien.pollet/notes/index.hack.html</loc>
-    <lastmod>2011-01-25T14:12:57+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    
-    <priority>0.5</priority>
-    
+    <loc>http://people.untyped.org/damien.pollet/publications/2008/Robbes2008changeBasedCoupling.pdf</loc>
+    <lastmod>2011-11-06</lastmod>
   </url>
-
   <url>
-    <loc>http://people.untyped.org/damien.pollet/notes/index.latex.html</loc>
-    <lastmod>2011-01-25T14:12:57+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    
-    <priority>0.5</priority>
-    
+    <loc>http://people.untyped.org/damien.pollet/publications/2008/Robbes2008changePrediction.pdf</loc>
+    <lastmod>2011-11-06</lastmod>
   </url>
-
   <url>
-    <loc>http://people.untyped.org/damien.pollet/notes/index.music.html</loc>
-    <lastmod>2011-01-25T14:12:57+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    
-    <priority>0.5</priority>
-    
+    <loc>http://people.untyped.org/damien.pollet/publications/2009/Casaccio2009objectspaces.pdf</loc>
+    <lastmod>2011-11-06</lastmod>
   </url>
-
   <url>
-    <loc>http://people.untyped.org/damien.pollet/notes/index.usability.html</loc>
-    <lastmod>2011-01-25T14:12:57+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    
-    <priority>0.5</priority>
-    
+    <loc>http://people.untyped.org/damien.pollet/publications/2009/Ducasse2009sarSoa.pdf</loc>
+    <lastmod>2011-11-06</lastmod>
   </url>
-
   <url>
-    <loc>http://people.untyped.org/damien.pollet/news.html</loc>
-    <lastmod>2010-11-06T03:47:28+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    
-    <priority>0.5</priority>
-    
+    <loc>http://people.untyped.org/damien.pollet/publications/2009/Ducasse2009testTraits.pdf</loc>
+    <lastmod>2011-11-06</lastmod>
   </url>
-
+  <url>
+    <loc>http://people.untyped.org/damien.pollet/publications/2009/Rothlisberger2009heatmaps.pdf</loc>
+    <lastmod>2011-11-06</lastmod>
+  </url>
+  <url>
+    <loc>http://people.untyped.org/damien.pollet/publications/2009/Rothlisberger2009heatmapsTR.pdf</loc>
+    <lastmod>2011-11-06</lastmod>
+  </url>
+  <url>
+    <loc>http://people.untyped.org/damien.pollet/publications/2010/Abdeen2010packageFingerprint.pdf</loc>
+    <lastmod>2011-11-06</lastmod>
+  </url>
+  <url>
+    <loc>http://people.untyped.org/damien.pollet/publications/2010/Abdeen2010packageFingerprint0.pdf</loc>
+    <lastmod>2011-11-06</lastmod>
+  </url>
+  <url>
+    <loc>http://people.untyped.org/damien.pollet/publications/2010/Anquetil2010gpl.pdf</loc>
+    <lastmod>2011-11-06</lastmod>
+  </url>
+  <url>
+    <loc>http://people.untyped.org/damien.pollet/publications/2010/Anquetil2010gpl0.pdf</loc>
+    <lastmod>2011-11-06</lastmod>
+  </url>
+  <url>
+    <loc>http://people.untyped.org/damien.pollet/publications/2010/Arnaud2010readonly.pdf</loc>
+    <lastmod>2011-11-06</lastmod>
+  </url>
+  <url>
+    <loc>http://people.untyped.org/damien.pollet/publications/2010/Bourgois2010bloc.pdf</loc>
+    <lastmod>2011-11-06</lastmod>
+  </url>
+  <url>
+    <loc>http://people.untyped.org/damien.pollet/publications/2010/Robbes2010changePrediction.pdf</loc>
+    <lastmod>2011-11-06</lastmod>
+  </url>
+  <url>
+    <loc>http://people.untyped.org/damien.pollet/publications/DamienPollet.bib</loc>
+    <lastmod>2012-01-08</lastmod>
+  </url>
+  <url>
+    <loc>http://people.untyped.org/damien.pollet/publications/</loc>
+    <lastmod>2011-11-25</lastmod>
+  </url>
+  <url>
+    <loc>http://people.untyped.org/damien.pollet/research/</loc>
+    <lastmod>2011-11-05</lastmod>
+  </url>
+  <url>
+    <loc>http://people.untyped.org/damien.pollet/software/citezen/</loc>
+    <lastmod>2010-12-19</lastmod>
+  </url>
+  <url>
+    <loc>http://people.untyped.org/damien.pollet/software/</loc>
+    <lastmod>2012-10-13</lastmod>
+  </url>
+  <url>
+    <loc>http://people.untyped.org/damien.pollet/software/petitmarkdown/</loc>
+    <lastmod>2010-12-19</lastmod>
+  </url>
+  <url>
+    <loc>http://people.untyped.org/damien.pollet/teaching/</loc>
+    <lastmod>2011-11-05</lastmod>
+  </url>
 </urlset>

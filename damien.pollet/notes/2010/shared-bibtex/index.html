@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<meta name="author">
+<meta content="Website of Damien Pollet, Ph.D" name="description">
+<meta content="software engineering, programming languages, reengineering, visualisation, virtual machines, object-oriented" name="keywords">
+<meta content="nanoc — http://nanoc.stoneship.org" name="generator">
+<link href="../../../images/icon.png" rel="icon" type="image/png">
+<link href="../../../stylesheets/screen.css" media="screen,projection" rel="stylesheet" type="text/css">
+<link href="../../../stylesheets/animations.css" media="screen,projection" rel="stylesheet" type="text/css">
+<title>Playing Tenuki — Many LaTeX documents, one BibTeX database</title>
+</head>
+<body>
+<div class="hide" id="pagetop"><p>Skip to: <a href="#menu" accesskey="2">Site menu</a> | <a href="#main" accesskey="3">Main content</a></p></div>
+<div id="container">
+<div id="header">
+<h1><a accesskey="4" href="../..">Playing Tenuki</a></h1>
+<div id="tagline">The art of computer procrastinating:<br><em>random articles not completely unrelated to research, objects, programming, and craft.</em>
+</div>
+<div class="clear"> </div>
+<div id="menu"><ul>
+<li><a href="../../../">About me</a></li>
+<li><a href="../../archives/">Archives</a></li>
+<li><a href="../../tags/">Tags</a></li>
+</ul></div>
+<div class="clear"> </div>
+</div>
+<div class="hyphenate" id="main">
+<h1>Many LaTeX documents, one BibTeX database</h1>
+<div class="right"><a href="http://www.flickr.com/photos/rageforst/278045133"><img alt="Biblioteca Vasconcelos" src="../../images/library.jpg" title="Biblioteca Vasconcelos — CC-BY-NC-SA http://www.flickr.com/photos/rageforst/278045133"></a></div>
+
+<div class="postmeta">
+<span class="date">13 Jan 2010</span><span class="tags">
+in
+<a href="../../tags/#latex" rel="tag">latex</a>, <a href="../../tags/#bibtex" rel="tag">bibtex</a>
+</span><span class="previous">
+<a href="../../2009/playing-tenuki/">← previous</a>
+</span><span class="next">
+<a href="../latexmk-omnigraffle/">next →</a>
+</span>
+</div>
+
+
+<p>As a researcher, I spend most of my time writing <a href="http://www.latex-project.org/" title="LaTeX, a document preparation system">LaTeX</a>, using <a href="http://tug.org/texlive/" title="the TeXlive distribution">many</a> <a href="http://texcatalogue.sarovar.org/entries/latexmk.html" title="Latexmk for automatic compilation">tools</a>, among which <a href="http://www.bibtex.org/">BibTeX</a>, the bibliography database processor. Our team manages a huge <code>.bib</code> file centralizing all publications we read and might need to cite someday.</p>
+
+<p>Since nearly everything we write uses that file, it gets linked or copied into each the source directory of each new document. Some of us even have a bash alias to automate that copy, but they still have to invoke it for each new paper.
+But…</p>
+
+<dl>
+<dt>Zero cost solution:</dt>
+  <dd>Just put the database somewhere in BibTeX’s search path!</dd>
+</dl>
+<p><em>Duh…</em> Seems obvious, but somehow it took me 10 years of regular LaTeX usage to think of it…
+Anyway, to see where BibTeX will look, run this<sup id="fnref:kpse"><a href="#fn:kpse" rel="footnote">1</a></sup>:</p>
+
+<pre><code>kpsepath bib
+</code></pre>
+
+<p>This should display a <code>$PATH</code>-like colon-separated list of directory names<sup id="fnref:path"><a href="#fn:path" rel="footnote">2</a></sup>. With a standard TeXlive installation, there should be:</p>
+
+<ul>
+<li>
+<code>.</code> for BibTeX files that are besides their LaTeX document,</li>
+  <li>then a couple ones starting in <code>~/.texliveYYYY</code> which are for caching automatically generated files,</li>
+  <li>then the per-user additions directory we want,</li>
+  <li>and finally some standard distribution-wide places.</li>
+</ul>
+<p>By default, the per-user directory is <code>~/Library/texmf</code> on Mac and <code>~/texmf</code> on Linux; this is where you would install third-party packages, by the way.</p>
+
+<p>In our case, the <code>///bibtex/bib//</code> suffix means that BibTeX will look for files anywhere under a <code>bibtex/bib</code> directory, itself at any depth under <code>texmf</code>.
+So we just need to create <code>~/Library/texmf/bibtex/bib</code>, symlink our <code>foo.bib</code> files in there.</p>
+
+<p>We can check that all is good:</p>
+
+<pre><code>$ kpsewhich lse.bib
+/Users/someone/Library/texmf/bibtex/bib/foo.bib
+</code></pre>
+
+<p>It finds the newly installed <code>foo.bib</code>, so <em>voilà</em>, <code>\bibliography{foo}</code> now works in any document without further preparation!</p>
+
+<div class="footnotes">
+  <ol>
+<li id="fn:kpse">
+      <p>The <code>kpse*</code> commands are from <a href="http://www.tug.org/kpathsea/">Kpathsea</a>, the library to quickly locate files in the TeXlive hierarchy.<a href="#fnref:kpse" rel="reference">↩</a></p>
+    </li>
+    <li id="fn:path">
+      <p>Compared to the usual unix search paths, there are a couple extensions: <code>//</code> means to search subdirectories recursively, and a leading <code>!!</code> means to look only in the cached index, never on the disk.<a href="#fnref:path" rel="reference">↩</a></p>
+    </li>
+  </ol>
+</div>
+
+
+<div class="clear"> </div>
+</div>
+<div class="clear"> </div>
+</div>
+<div id="pagebottom">Some rights reserved. Except where otherwise noted, this website by
+<a xmlns:cc="http://creativecommons.org/ns#" href="http://people.untyped.org/damien.pollet" property="cc:attributionName" rel="cc:attributionURL"></a>
+is licensed under
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative Commons Attribution-Share Alike 2.0 France</a>.
+<br>
+
+Generated by
+<a href="http://nanoc.stoneship.org">nanoc</a>,
+<a href="http://www.ruby-lang.org/en/">ruby</a>,
+
+<a href="http://sass-lang.com">sass</a>,
+<a href="http://haml-lang.com">haml</a>,
+
+<a href="http://daringfireball.net/projects/markdown/">markdown</a>,
+<a href="http://kramdown.rubyforge.org">kramdown</a>,
+
+<a href="http://slidesjs.com/">slides</a>,
+<a href="http://jquery.org/">jquery</a>,
+<a href="http://gsgd.co.uk/sandbox/jquery/easing/">easing</a>,
+
+<a href="http://code.google.com/p/hyphenator/">hyphenator.js</a>…
+<span class="konami" style="display:none">and
+<a href="http://konami-js.googlecode.com">konami.js</a>!</span>
+<br>
+
+Last updated on 2012-10-14. 
+Toggle <a id="HyphenatorToggleBox" class="donthyphenate">hy-phe-na-ti-on</a>.
+<br><img alt="Creative Commons License" style="margin-top:1ex;border-width:0" src="../../../images/cc-by-sa-80x15.png"><a accesskey="1" class="hide" href="#pagetop">Back to top</a>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script><script src="../../../scripts/footnotes.js" type="text/javascript"></script><script type src="../../../scripts/jquery.easing.1.3.js"></script><script type src="../../../scripts/slides.jquery.js"></script><script type>
+    $(function(){
+        $('.slides.bare').slides({
+            randomize: true,
+            play: 30000,
+            hoverPause: true,
+            bigTarget: true,
+            generatePagination: false,
+            effect: 'fade',
+            fadeSpeed: 1000,
+            fadeEasing: 'easeInOutSine',
+            crossfade: true
+        });
+    });
+</script><script type="text/javascript" src="../../../scripts/hyphenator.js"></script><script type="text/javascript">
+  $('#HyphenatorToggleBox').click(
+    function() {
+      Hyphenator.toggleHyphenation();
+      if (Hyphenator.doHyphenation) {
+        $('#HyphenatorToggleBox').text('hy-phe-na-ti-on');
+      } else {
+        $('#HyphenatorToggleBox').text('hyphenation');
+      }
+    });
+  Hyphenator.config({
+      persistentconfig: true,
+      useCSS3hyphenation: true,
+      selectorfunction: function() {
+        return $('.hyphenation p').get();
+      }
+  });
+  Hyphenator.run();
+</script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-718463-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
