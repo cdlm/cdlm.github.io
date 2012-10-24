@@ -1,29 +1,38 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<title>Welcome</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta http-equiv="refresh" content="3;url=http://people.untyped.org/damien.pollet">
+<head>
+    <title>Welcome</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="refresh" content="3;url=http://people.untyped.org/damien.pollet">
     <style type="text/css">
-      body {
-        text-align: center;
-        font: 1em/1.2em "Gill Sans", "Helvetica Neue", Arial, Verdana, sans-serif;
-        color: #eee;
-        /* text-shadow: 0 1px 3px black; */
-        background: #999 url(body-gradient.png) repeat-x;
-      }
-      a, a:link, a:visited { color: #eee; text-decoration: none; }
-      a:hover, a:active { text-decoration: underline; }
-      #logo {
-        font-size: larger;
-        margin: 120px auto auto auto;
-      }
+        html {
+            background: #444 url(linen.png);
+            /* margin: 0; padding: 0; */
+        }
+        body {
+            position: fixed;
+            top: 0; bottom: 0; left: 0; right: 0;
+            margin: 0;
+            text-align: center;
+            font: 1em/1.2em "Helvetica Neue", Arial, Verdana, sans-serif;
+            color: #999;
+            text-shadow: 0 1px 2px black;
+            background-image: -webkit-radial-gradient(
+                center 200px, circle closest-corner,
+                transparent 20%, rgba(0,0,0,0.5) 100%);
+        }
+        a, a:link, a:visited { color: #aaa; text-decoration: none; }
+        a:hover, a:active { text-decoration: underline; }
+        #logo {
+            font-size: larger;
+            margin: 200px auto auto auto;
+        }
     </style>
-	</head>
-	<body>
-	  <div id="logo">
-	    <img src="untyped-big.png" alt="logo" />
+</head>
+<body>
+    <div id="logo">
+        <img src="untyped-big.png" alt="logo" />
         <p><!--<a href="http://typo.cdlm.fasmz.org">Weblog</a>-->
             <a href="http://people.untyped.org/damien.pollet">Homepage</a>
             &nbsp;&mdash;&nbsp;
@@ -31,6 +40,6 @@
             &nbsp;&mdash;&nbsp;
             <a href="http://www.linkedin.com/in/damienpollet">LinkedIn</a>
         </p>
-	  </div>
-	</body>
+    </div>
+</body>
 </html>
