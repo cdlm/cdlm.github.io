@@ -1,0 +1,2 @@
+Sitemap: http://people.untyped.org/damien.pollet/sitemap.xml
+
