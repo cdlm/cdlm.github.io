@@ -107,16 +107,16 @@ strong.marker { background-color: #ffffa0; padding: 0.2ex 0.4ex; margin: -0.2ex 
 
 .permalink { margin-top: 1ex; margin-right: 1em; }
 
-#header { margin: 0 -1.5em 1ex 0; }
-#header h1 { float: left; font-size: 200%; }
-#header h1 a { color: black; }
-#header #tagline { float: right; text-align: right; margin-left: 9ex; }
+#header { margin: 0 -2em 1ex -2em; }
+#header h1 { float: left; margin: 0 1em; font-size: 200%; font-weight: 100; text-transform: uppercase; letter-spacing: 0.15em; }
+#header h1 a { color: #26421b; }
+#header #tagline { float: right; text-align: right; margin: 0 2em 0 5em; }
 
-#menu { margin: 1ex -1ex -1ex -1ex; padding: 0; float: left; }
-#menu ul { display: block; list-style: none; margin: 0; padding: 0; }
-#menu li { display: inline-block; margin: 0 1ex 0 0; }
-#menu span, #menu a { display: inline-block; padding: 0.5ex 1ex 1.2ex 1ex; margin-bottom: -1ex; color: black; }
-#menu .active { padding-bottom: 0.2ex; border-bottom: 1ex solid #e05030; color: white; }
+#menu { margin: 1ex 0 -1.5ex 0; padding: 0 2em; background: white; border-top-left-radius: 0.5em; border-top-right-radius: 0.5em; }
+#menu ul { display: block; list-style: none; margin: 0 -1.5ex; padding: 0; }
+#menu li { display: inline-block; margin: 0 0.5ex; }
+#menu span, #menu a { display: inline-block; padding: 0.9ex 1ex 0.5ex 1ex; color: #888888; }
+#menu .active { padding-top: 0; border-top: 1ex solid #e05030; color: #e05030; }
 
 #langbar { margin: 1.5ex 0 -2ex 0; float: right; }
 
