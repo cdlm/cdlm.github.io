@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://people.untyped.org/damien.pollet/</loc>
-    <lastmod>2013-03-02</lastmod>
+    <lastmod>2013-03-05</lastmod>
   </url>
   <url>
     <loc>http://people.untyped.org/damien.pollet/contact/</loc>
@@ -159,5 +159,9 @@
   <url>
     <loc>http://people.untyped.org/damien.pollet/teaching/</loc>
     <lastmod>2011-11-05</lastmod>
+  </url>
+  <url>
+    <loc>http://people.untyped.org/damien.pollet/teaching/grading-progress/</loc>
+    <lastmod>2013-06-04</lastmod>
   </url>
 </urlset>

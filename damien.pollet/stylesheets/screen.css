@@ -68,6 +68,8 @@ a:hover { text-decoration: underline; }
 #main ul.publications .title { font-weight: bold; }
 #main ul.publications .notes { display: block; margin: 0.5ex 0; color: #666666; }
 #main ul.publications .award { background-color: #ffffa0; padding: 0.2ex 0.4ex; margin: -0.2ex -0.4ex; border-radius: 0.5ex; -webkit-border-radius: 0.5ex; -moz-border-radius: 0.5ex; }
+#main .center { text-align: center; }
+#main .huge { font-size: 10em; }
 #main .highlight, #main .banner { margin: 1em -14.5em 1em -14.5em !important; padding: 1ex 14.5em 1ex 14.5em; clear: both; }
 #main .highlight { background-color: #ffffa0; background: -webkit-gradient(linear, left top, right bottom, from(white), color-stop(0.3, #ffffa0), color-stop(0.7, #ffffa0), to(white)); background: -moz-linear-gradient(left, white, #ffffa0, #ffffa0, white); }
 #main .banner { background-color: #deefd1; background: -webkit-gradient(linear, left top, right bottom, from(white), color-stop(0.3, #deefd1), color-stop(0.7, #deefd1), to(white)); background: -moz-linear-gradient(left, white, #deefd1, #deefd1, white); }
